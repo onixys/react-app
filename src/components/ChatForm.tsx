@@ -2,7 +2,6 @@ import React from 'react';
 import { Formik, Field, Form } from 'formik';
 import { Button, TextField } from '@material-ui/core';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import SockJs from './SockJs';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -51,7 +50,6 @@ const Chat: React.FunctionComponent<Props> = ({ onSubmit }) => {
                     </Form>
                 )}
             </Formik>
-            <SockJs data={'data.chat'} />
         </div>
     );
 };
